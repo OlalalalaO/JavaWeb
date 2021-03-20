@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="#" method="get"><!--        定义了可以采集用户数据的范围-->
+<!--
+        action :the url of submit
+        method :the form of submit
+            get:
+                1. the parameter will display in address bar.
+                2. the length of parameter will be limited
+                3.not safe
+            post:ssadas
+                1.the parameter never display in address bar.
+                2. the length of parameter will never be limited
+                3.safe
+         if you want to submit the data of the form,you will set a  attributes called "name"
+-->
+        <label for="username">username:</label><input name="username" type="text" placeholder="please input your nickname" id="username"><br> <!--create a text field  -->
+        password:<input name="password" type="password"><br>
+        sex:<input type="radio" name="gender" value="male" checked = checked> male
+            <input type="radio" name="gender" value="female"> female <br>
+        hobby:<input type="checkbox" name="hobby" value="shopping" checked = checked> shopping
+                <input type="checkbox" name="hobby" value="game"> game
+                <input type="checkbox" name="hobby" value="java"> java<br>
+        图片：<input type="file" name="file"> <br>
+        隐藏域：<input type="hidden" name="id" value="aaaa"><br> <!--用于提交一些信息，不会显示  -->
+        提交按钮: <input type="submit" value="登录"><br>
+        按钮：<input type="button" value="按钮"><br>
+<!--        图片按钮：<input type="image" src="../img/sign.jpeg"><br>-->
+        拾色器: <input type="color" value="color"><br>
+        生日:<input type="date" name="birthday"><br>
+        生日2:<input type="datetime-local" name="birthday"><br>
+        省份：<select name="province">        <!--下拉菜单-->
+                <option>请选择</option>
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3" selected>山西</option>
+        </select><br>
+        自我描述<textarea cols="20" rows="5" name="des">
+
+        </textarea>
+        <!--type:
+                text: default
+                password: password input ,the inputing data will be converted *
+                radio: radio button ,when the attributes of name equals ,it can only choice one  value: submitted  data
+                checkbox: you can choose multiple options
+                checked = checked: default option
+                placeholder: grey prompt
+                label for: get  focus
+                        -->
+        <!--
+            按钮：
+                submit 提交按钮 button 按钮
+
+        -->
+        <!--select-->
+        <!--textarea -->
+        <input type="submit" value="log in"> <!--create a button  -->
+    </form>
+</body>
+</html>
