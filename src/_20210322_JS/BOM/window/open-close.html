@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <input type="button" value="打开新窗口" id="btn">
+    <input type="button" value="关闭新窗口" id="btn1">
+    <script>
+        var elementById = document.getElementById("btn");
+        var nw;
+        elementById.onclick = function (){ //打开新窗口
+            nw = open("https://www.baidu.com");      //跳转百度,返回一个window对象
+        };
+        var elementById1 = document.getElementById("btn1");
+            elementById1.onclick = function (){ //关闭新窗口
+                nw.close();  //谁用我我关谁
+        };
+    </script>
+</body>
+</html>

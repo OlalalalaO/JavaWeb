@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件操作</title>
+
+</head>
+<body>
+<!--将事件绑定在image-->
+    <img onclick="alert('我被点了');" src="img/off.gif" alt="灯泡">
+<!--将操作存入函数绑定在image，引号内必须加()-->
+    <img onclick="f();" src="img/off.gif">
+<!--通过js得到对象，指定事件属性，设置函数-->
+    <img id="light2" src="img/off.gif">
+
+<script>
+    //某些组件执行了某些操作后，触发代码的执行
+    function f(){
+        alert("我被点击了")
+    }
+
+    var click = document.getElementById("light2");
+    click.onclick = f; //不加（）
+</script>
+</body>
+</html>

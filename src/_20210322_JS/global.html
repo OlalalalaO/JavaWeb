@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var str = "传智播客";
+        var encode = encodeURI(str);
+        document.write(encode+"<br>");
+        document.write(decodeURI(encode));
+
+        var str = "传智播客";
+        var encode = encodeURIComponent(str); //编码的字符更多
+        document.write(encode+"<br>");
+        document.write(decodeURIComponent(encode));
+
+        var str11 = "123";
+        var number = parseInt(str11);  //从左往右判断是否是数字。遇到字母结束
+        alert(number+1);
+
+        var aaa = "acb";
+        //isNaN判断是否是NaN,==与Nan比较，始终为null
+
+        eval();
+    </script>
+</body>
+</html>

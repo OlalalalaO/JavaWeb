@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        var id = setTimeout(f,5000);//一次性定时器，参数一：方法，参数二：ms,返回一个timeout对象
+        clearTimeout(id);
+        function f() {
+            alert("boom!!!")
+        }
+
+
+        var id1 = setInterval(f,2000); //循环定时器
+        clearInterval(id);
+        function f() {
+            alert("boom!!!");
+        }
+
+
+    </script>
+</body>
+</html>

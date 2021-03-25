@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+</head>
+<body>
+    <script>
+        var reg = new RegExp("\w{6,12}");
+        var reg1 = /^w{6,12}$/;  //w
+        alert(reg);
+        alert(reg1);
+        var username = "zhangsan";
+        var flag = reg1.test(username);
+        document.write(flag);
+    </script>
+</body>
+</html>
