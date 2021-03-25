@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+</head>
+<body>
+    <script>
+        //定义变量
+        var a = 3;
+        var num = 1;
+        var num1 = 2;
+        var num2 = NaN;
+
+        //输出到页面
+        document.write(num+"---"+typeof(num)+"<br>");
+        document.write(num1+"<br>");
+        document.write(num2+"<br>");
+
+
+        var str = "abc";
+        document.write(str+"---"+typeof(str)+"<br>");
+
+        var flag = true;
+        document.write(flag+"<br>");
+
+        var obj = null;
+        document.write(obj+"<br>")
+
+        var obj1;
+        document.write(obj1+"<br>")
+        //运算符
+        /*****************************************
+        1.一元运算符
+        ++,--,
+         */
+        //字符串转数字
+        var b = +"123";
+        document.write(b+1+"<br>")  //如果不是数字进行加减，则转化为nan
+        //布尔转数字
+        document.write(+true+"<br>");
+        document.write(+false+"<br>");
+        /*****************************************/
+        // 2.算数运算符
+        var  a = 3;
+        var  b = 4;
+        document.write(a/b);
+        document.write(a%b+"<br>");
+        /*****************************************/
+        //3.赋值运算
+
+        //4.比较运算符
+            //类型相同比较,如果为字符串，按位进行比较，按照字典顺序
+                document.write((3>4)+"<br>");
+                document.write(("abc">"acb")+"<br>");
+            //类型不同比较，先进行类型转换
+            //===,全等于，如果类型不一样则返回false
+                document.write(("123"==123)+"<br>");
+                document.write(("123"===123)+"<br>");
+        /*****************************************/
+        //5.逻辑运算符
+                //!
+                    //1，number转布尔，0为假，非0为真
+                document.write(!0+"<br>");
+                    //2，string转布尔，除了""空字符串，其他都为true
+                    //3.null&&undefined转布尔,都是false
+                    //4.对象转布尔,都是true,if(obj)
+
+        //3.三元运算符 ?表达式:表达式
+                var c = 3>4?1:0;
+                document.write(c);
+    </script>
+</body>
+</html>

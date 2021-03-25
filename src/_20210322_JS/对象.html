@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //基本对象
+        //Function(函数)对象
+            //1.创建，方法，属性，特点，调用
+        /************************************/
+        var fun = new Function("a","b","alert(a);");
+        //调用
+        //fun(3,4)
+
+        /************************************/
+        function f(a,b) {  //形参的类型不用写
+            //alert(a+b);
+        }
+        //f(3,4);
+        f(4,5);
+        /************************************/
+        var f = function (a,b){//函数可以互相覆盖，函数名字可以相同
+            //alert(a-b);
+        }
+        //alert(f.length);//参数的个数
+        /************************************/
+        var f1 = function (a,b){
+            alert(a);
+        }
+        //f1(1); //可以只传一个参数，另一个为undefined
+
+        function ff() {
+            var sum = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                sum = arguments[i]+sum;  //arguments内存所有传入的参数，不管有没有
+
+            }
+            alert(sum);
+        }
+        ff(1,2,3,4,5);
+
+
+    </script>
+</body>
+</html>
