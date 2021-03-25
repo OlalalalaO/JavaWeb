@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" id="btn" value="按钮">
+    <script>
+        //reload 刷新
+        var b = document.getElementById("btn");
+        /* b.onclick = function () {
+             location.reload();
+         }*/
+        b.onclick = f;
+        //herf 获取url
+        //var herf = location.href; //获取当前路径
+        function f() {
+            location.herf = "https://www.baidu.com"; //去往百度
+            //alert(herf);
+        }
+
+    </script>
+</body>
+
+</html>

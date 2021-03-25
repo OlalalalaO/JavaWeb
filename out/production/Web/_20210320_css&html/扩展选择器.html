@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <STYLE>
+        div p{
+            color: red;
+        }
+        div > p{
+            border: 1px solid;
+        }
+        input[type = "text"]{ /* 选择类型为text类型的文本框*/
+            border: 5px solid;/*1*/
+        }
+        a:link{
+            color: pink;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:visited{
+            color: red ;
+        }
+    </STYLE>
+</head>
+<body>
+<!--*{}全选 -->
+<!-- 选择器1 ，选择器2{}两种选择器 1都会生效 -->
+<!-- 子选择器1 选择器2{} 选择器1下的选择器2 -->
+<!-- 父选择器 选择器1>选择器2  筛选选择器2上的选择器1 -->
+<!--属性选择器 选择元素选择器，属性名等于属性 元素名称[属性名 = "属性值"]-->
+<!--伪类选择器 选择一些元素具有的状态-->
+    <div>
+        <p>啦啦啦啦</p>
+    </div>
+    <p> 呵呵呵</p>
+    <input type="text">
+    <input type="password"><br>
+
+    <a href="#">啦啦啦</a><br>
+    <a href="#">啦啦啦</a><br>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="获取历史记录个数" id="his">
+    <input type="button" value="前进" id="forward">
+    <a href="./location.html">页面</a>
+    <script>
+        //length 返回当前窗口中的历史记录
+        var b = document.getElementById("his");
+        b.onclick = function () {
+            var his = history.length;
+            alert(his);
+        }
+        var b1 = document.getElementById("forward");
+        b1.onclick = function () {
+            history.forward();
+        }
+        //back 后退到某个页面
+        //forword 前进到某个页面
+        //go 去往某个页面
+
+
+    </script>
+</body>
+
+</html>

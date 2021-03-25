@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+    <script>
+        //定义一个方法，获取span的标签
+        var second = 5;
+        function showtim() {
+            if (second <= 0) {
+                location.href = "https://www.baidu.com"
+            } else {
+                second--;
+                var time = document.getElementById("time");
+                time.innerHTML = second + "";
+            }
+
+
+        }
+        //定义一个定时器
+        setInterval(showtim, 1000);
+    </script>
+</head>
+
+<body>
+    <p><span id="time">5</span>秒之后跳转首页</p>
+</body>
+
+</html>
