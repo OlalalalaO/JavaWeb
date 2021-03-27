@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div1">
+        div
+    </div>
+    <script>
+        let div = document.getElementById("div1");
+        let innerHTML = div.innerHTML; //innerHTML获取标签内容
+        //alert(innerHTML);
+        div.innerHTML = "<input type='text'>"; //替换一个标签
+        div.innerHTML += "<input type='text'>"; //追加一个标签
+
+    </script>
+</body>
+</html>
