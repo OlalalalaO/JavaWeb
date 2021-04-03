@@ -3,14 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
     <script>
         //某些组件执行了某些操作之后，触发代码的执行
         //事件监听
         //事件源，监听器，注册监听:将事件源和监听器绑定在一起
 
 
+        //加载：加载完成了
+        window.onload = function (){  //等待所有页面加载完成
+            //失去焦点:一般用于表单验证，用户名填写完成后，进行检验用户名的信息是否正确
+     /*       let elementById = document.getElementById("username");
+            elementById.onblur = function (){
+                alert("失去焦点了");
+            }
+            //鼠标移动
+             document.getElementById("username").onmouseover = function (){//鼠标移动到元素之上
+                alert("鼠标碰到了");
+             }*/
+/*            document.getElementById("username").onmousedown = function (event){ //鼠标点击,传入一个event对象,定义一个形参
+
+                alert(event.button);
+            }*/
+/*            document.getElementById("username").onkeydown = function (event){ //获取键盘
+                alert(event.keyCode);//获取按得那个键：回车提交表单
+            }*/
+/*            document.getElementById("username").onchange = function (){  //文本框的内容改变了
+                alert("变了");
+            }*/
+
+        }
+        function fff(){ //可以对输入内容进行校验，符合格式进行提交
+            if(111 == document.getElementById("username").value){
+                return true;//组织表单被提交
+            }else return false;
+        }
+
     </script>
+
+</head>
+<body>
+    <form action="#" id="form" onclick="return fff();">
+        <input id="username" name="username">  <!--不写name不会提交-->
+        <input type="submit" value="提交">
+    </form>
 </body>
 </html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<users>
+    <user id = "1">
+        <name>张三</name>
+        <age>23</age>
+        <gender>female</gender>
+        <![CDATA[
+        啦啦啦啦
+        ]]>
+    </user>
+</users>
